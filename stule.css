@@ -1,0 +1,94 @@
+body{
+    background-image: url('assets/home.png');
+    display: flex;
+    padding-top: 30px;
+}
+.left{
+    width: 75%;
+}
+.right{
+    width: 25%;
+}
+.ancient{
+    width: 600px;
+    height: 600px;
+    margin:20px;
+    background-size: cover;
+    filter: grayscale(50%) blur(5px);    
+    border-radius: 15px;
+}
+.maps-of-the-ancient{
+    display: flex;
+}
+.ancient-1{
+    background-image: url('assets/Ancients/Azathoth.png');
+}
+.ancient-2{
+    background-image: url('assets/Ancients/Cthulthu.png');
+}
+.ancient-3{
+    background-image: url('assets/Ancients/IogSothoth.png');
+}
+.ancient-4{
+    background-image: url('assets/Ancients/ShubNiggurath.png');
+}
+.active-ancient{
+    filter: none;
+}
+.difficulty-level{
+    justify-content: center ;
+    display: flex;
+}
+.level{
+    width: 220px;
+    height: 80px;
+    margin: 10px;
+    background-color: rgb(252, 240, 188);
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 30px;
+    filter: grayscale(50%) blur(2px);
+    border-radius: 15px;
+}
+.active-level{
+    filter: none;
+}
+.counter{
+    margin: 0 20px;
+}
+.stage{
+    height: 40px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+h5{
+    color: white;
+    font-size: 30px;
+    margin: 0;
+}
+.card-counter{
+    height: 40px;
+    width: 80px;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+.green{
+    background-color: green;
+}
+.yellow{
+    background-color: rgb(187, 128, 0);
+}
+.blue{
+    background-color: rgb(38, 38, 221);
+}
+
+.deck{
+    margin: 20px;
+    height: 600px;
+    border-radius: 15px;
+    background-image: url('assets/mythicCardBackground.png');
+    background-size: cover;
+}
