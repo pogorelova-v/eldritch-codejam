@@ -68,7 +68,6 @@ const blueTentaclesArr = [blue1, blue2, blue6, blue8]
 const greenTentaclesArr = [green2, green3, green4, green5, green6]
 const brownTentaclesArr = [brown6, brown7, brown8, brown9, brown10] */
 
-//               const deck = document.querySelector('.deck');
 
 const randomNumb = (arrStart) => {
   let lengthArr = arrStart.length;
@@ -93,16 +92,54 @@ let greenArrJob = jobArrFunc(5, greenArr);
 let brownArrJob = jobArrFunc(9, brownArr);
 let blueArrJob = jobArrFunc(2, blueArr); 
 
-let green1Arr = greenArrJob.splice(0, 1);
-let green2Arr = greenArrJob.splice(0, 2);
-let green3Arr = greenArrJob.splice(0, 2);
+const numberPicture = (arr, megaArr) => {
+  let newArr = [];
+  for( let i = 0 ; i < arr.length ; i++) {
+     let n = arr[i];
+     newArr.push(megaArr[n]);
+  }
+  return newArr
+}
 
-let brown1Arr = brownArrJob.splice(0, 2);
-let brown2Arr = brownArrJob.splice(0, 3);
-let brown3Arr = brownArrJob.splice(0, 4);
+let greenArrJobNew = numberPicture(greenArrJob, greenArr);
+let brownArrJobNew = numberPicture(brownArrJob, brownArr);
+let blueArrJobNew = numberPicture(blueArrJob, blueArr);
 
-let blue1Arr = blueArrJob.splice(0, 1);
-let blue2Arr = blueArrJob.splice(0, 1);
+let green1Arr = greenArrJobNew.splice(0, 1);
+let green2Arr = greenArrJobNew.splice(0, 2);
+let green3Arr = greenArrJobNew.splice(0, 2);
+let brown1Arr = brownArrJobNew.splice(0, 2);
+let brown2Arr = brownArrJobNew.splice(0, 3);
+let brown3Arr = brownArrJobNew.splice(0, 4);
+let blue1Arr = blueArrJobNew.splice(0, 1);
+let blue2Arr = blueArrJobNew.splice(0, 1);
 let blue3Arr = [0] ;
 
-//           block.style.backgroundImage = "url('https://cs7062.vk.me/c540107/v540107359/2729/fYQlS_23QdA.jpg')";
+const green1Card = document.querySelector('.green-1');
+const green2Card = document.querySelector('.green-2');
+const green3Card = document.querySelector('.green-3');
+const brown1Card = document.querySelector('.brown-1');
+const brown2Card = document.querySelector('.brown-2');
+const brown3Card = document.querySelector('.brown-3');
+const blue1Card = document.querySelector('.blue-1');
+const blue2Card = document.querySelector('.blue-2');
+
+green1Card.textContent = green1Arr.length;
+green2Card.textContent = green2Arr.length;
+green3Card.textContent = green3Arr.length;
+brown1Card.textContent = brown1Arr.length;
+brown2Card.textContent = brown2Arr.length;
+brown3Card.textContent = brown3Arr.length;
+ blue1Card.textContent = blue1Arr.length;
+ blue2Card.textContent = blue2Arr.length;
+
+
+const deck = document.querySelector('.deck');
+
+const backgroundCover = () => {
+  
+}
+
+deck.addEventListener('click', () => {
+  backgroundCover();
+})
