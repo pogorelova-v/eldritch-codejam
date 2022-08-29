@@ -137,7 +137,55 @@ brown3Card.textContent = brown3Arr.length;
 const deck = document.querySelector('.deck');
 
 const backgroundCover = () => {
-  
+  if( green1Arr.length > 0) {
+    for(let i = 0 ; i < green1Arr.length; i++){
+    deck.style.backgroundImage = green1Arr[0];
+    green1Arr.shift();
+    green1Card.textContent = green1Arr.length;
+   }
+  } else if ( brown1Arr.length > 0) {
+    for(let i = 0 ; i < brown1Arr.length; i++){
+      deck.style.backgroundImage = brown1Arr[0];
+      brown1Arr.shift();
+      brown1Card.textContent = brown1Arr.length;
+     }
+  } else if ( blue1Arr.length > 0) {
+    for(let i = 0 ; i < blue1Arr.length; i++){
+      deck.style.backgroundImage = blue1Arr[0];
+      blue1Arr.shift();
+      blue1Card.textContent = blue1Arr.length;
+     } 
+  }  else if ( green2Arr.length > 0) {
+    for(let i = 0 ; i < green2Arr.length; i++){
+      deck.style.backgroundImage = green2Arr[0];
+      green2Arr.shift();
+      green2Card.textContent = green2Arr.length;
+     }
+  } else if ( brown2Arr.length > 0) {
+    for(let i = 0 ; i < brown2Arr.length; i++){
+      deck.style.backgroundImage = brown2Arr[0];
+      brown2Arr.shift();
+      brown2Card.textContent = brown2Arr.length;
+     }
+  } else if ( blue2Arr.length > 0) {
+    for(let i = 0 ; i < blue2Arr.length; i++){
+      deck.style.backgroundImage = blue2Arr[0];
+      blue2Arr.shift();
+      blue2Card.textContent = blue2Arr.length;
+     }
+  }  else if ( green3Arr.length > 0) {
+    for(let i = 0 ; i < green3Arr.length; i++){
+      deck.style.backgroundImage = green3Arr[0];
+      green3Arr.shift();
+      green3Card.textContent = green3Arr.length;
+     }
+  } else if ( brown3Arr.length > 0) {
+    for(let i = 0 ; i < brown3Arr.length; i++){
+      deck.style.backgroundImage = brown3Arr[0];
+      brown3Arr.shift();
+      brown3Card.textContent = brown3Arr.length;
+     }
+  } else ( alert('reload the page to play again'))
 }
 
 deck.addEventListener('click', () => {

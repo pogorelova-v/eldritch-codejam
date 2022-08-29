@@ -15,7 +15,7 @@ body{
     height: 600px;
     margin:20px;
     background-size: cover;
-    filter: grayscale(50%) blur(5px);    
+    filter: grayscale(50%) blur(2px);    
     border-radius: 15px;
 }
 .maps-of-the-ancient{
@@ -35,6 +35,7 @@ body{
 }
 .active-ancient{
     filter: none;
+    box-shadow: white 0 0 15px 5px;
 }
 .difficulty-level{
     justify-content: center ;
@@ -54,6 +55,7 @@ body{
 }
 .active-level{
     filter: none;
+    box-shadow: white 0 0 15px 5px;
 }
 .counter{
     margin: 0 20px;
