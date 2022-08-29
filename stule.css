@@ -2,6 +2,7 @@ body{
     background-image: url('assets/home.png');
     display: flex;
     padding-top: 30px;
+    background-size: cover;
 }
 .left{
     width: 75%;
