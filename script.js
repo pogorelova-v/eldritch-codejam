@@ -56,19 +56,6 @@ const blueArr = [blue1, blue2, blue3, blue4, blue5, blue6, blue7, blue8, blue9, 
 const greenArr = [ green1, green2, green3, green4, green5, green6, green7, green8,  green9, green10, green11, green12, green13, green14, green15, green16, green17, green18]
 const brownArr = [brown1, brown2, brown3, brown4, brown5, brown6, brown7, brown8, brown9, brown10, brown11, brown12, brown13, brown14, brown15, brown16, brown17, brown18, brown19, brown20, brown21]
 
-/*const blueSnowflakeArr = [blue3, blue4, blue5, blue10]
-const greenSnowflakeArr = [green1, green12,  green16, green17, green18]
-const brownSnowflakeArr = [brown11, brown12, brown13, brown14, brown21]
-
-const blueNormArr = [blue7, blue9, blue11, blue12]
-const greenNormArr = [green7, green8,  green9, green10, green11, brown13, brown14, brown15]
-const brownNormArr = [brown1, brown2, brown3, brown4, brown5, brown15, brown16, brown17, brown18, brown19, brown20 ]
-
-const blueTentaclesArr = [blue1, blue2, blue6, blue8]
-const greenTentaclesArr = [green2, green3, green4, green5, green6]
-const brownTentaclesArr = [brown6, brown7, brown8, brown9, brown10] */
-
-
 const randomNumb = (arrStart) => {
   let lengthArr = arrStart.length;
   let randomRange = Math.floor(Math.random() * (lengthArr - 0 + 1)) + 0;
