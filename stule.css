@@ -95,3 +95,30 @@ h5{
     background-image: url('assets/mythicCardBackground.png');
     background-size: cover;
 }
+.click{
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    animation: scaleAni 3s infinite;
+}
+ 
+@keyframes scaleAni {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(0.8);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+.leftArr{
+   font-size: 60px;
+}
+.rightArr{
+    font-size: 40px;
+ }
+
