@@ -56,7 +56,7 @@ const blueArr = [blue1, blue2, blue3, blue4, blue5, blue6, blue7, blue8, blue9, 
 const greenArr = [ green1, green2, green3, green4, green5, green6, green7, green8,  green9, green10, green11, green12, green13, green14, green15, green16, green17, green18]
 const brownArr = [brown1, brown2, brown3, brown4, brown5, brown6, brown7, brown8, brown9, brown10, brown11, brown12, brown13, brown14, brown15, brown16, brown17, brown18, brown19, brown20, brown21]
 
-const blueSnowflakeArr = [blue3, blue4, blue5, blue10]
+/*const blueSnowflakeArr = [blue3, blue4, blue5, blue10]
 const greenSnowflakeArr = [green1, green12,  green16, green17, green18]
 const brownSnowflakeArr = [brown11, brown12, brown13, brown14, brown21]
 
@@ -66,7 +66,7 @@ const brownNormArr = [brown1, brown2, brown3, brown4, brown5, brown15, brown16, 
 
 const blueTentaclesArr = [blue1, blue2, blue6, blue8]
 const greenTentaclesArr = [green2, green3, green4, green5, green6]
-const brownTentaclesArr = [brown6, brown7, brown8, brown9, brown10]
+const brownTentaclesArr = [brown6, brown7, brown8, brown9, brown10] */
 
 //               const deck = document.querySelector('.deck');
 
@@ -85,10 +85,24 @@ const jobArrFunc = (num, arr) => {
       jobArrSet = new Set(jobArr);
       jobArr = [...jobArrSet];
     }
-    console.log(jobArr)
   return jobArr
 }
 
+
 let greenArrJob = jobArrFunc(5, greenArr);
 let brownArrJob = jobArrFunc(9, brownArr);
-let blueArrJob = jobArrFunc(2, blueArr);
+let blueArrJob = jobArrFunc(2, blueArr); 
+
+let green1Arr = greenArrJob.splice(0, 1);
+let green2Arr = greenArrJob.splice(0, 2);
+let green3Arr = greenArrJob.splice(0, 2);
+
+let brown1Arr = brownArrJob.splice(0, 2);
+let brown2Arr = brownArrJob.splice(0, 3);
+let brown3Arr = brownArrJob.splice(0, 4);
+
+let blue1Arr = blueArrJob.splice(0, 1);
+let blue2Arr = blueArrJob.splice(0, 1);
+let blue3Arr = [0] ;
+
+//           block.style.backgroundImage = "url('https://cs7062.vk.me/c540107/v540107359/2729/fYQlS_23QdA.jpg')";
